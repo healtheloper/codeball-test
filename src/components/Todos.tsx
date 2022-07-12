@@ -1,12 +1,7 @@
-import Todo, { TodoType } from '@components/Todo';
-
-const Todos: React.FC<{
-  todos: TodoType[];
-  onClickDeleteTodo: (todoId: number) => void;
-}> = ({ todos, onClickDeleteTodo }) => (
+const Todos: React.FC<{ todos: string[] }> = ({ todos }) => (
   <ul>
     {todos.map((todo) => (
-      <Todo todo={todo} onClickDeleteTodo={onClickDeleteTodo} />
+      <li>{todo}</li>
     ))}
   </ul>
 );
