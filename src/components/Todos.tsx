@@ -1,9 +1,9 @@
-export default function Todos() {
-  return (
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
-  );
-}
+const Todos: React.FC<{ todos: string[] }> = ({ todos }) => (
+  <ul>
+    {todos.map((todo) => (
+      <li>{todo}</li>
+    ))}
+  </ul>
+);
+
+export default Todos;
