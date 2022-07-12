@@ -13,6 +13,7 @@ const App: React.FC = () => {
   };
 
   console.log('콘솔은 지워주세요');
+  console.log('콘솔좀..');
 
   return (
     <div>
